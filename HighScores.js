@@ -6,8 +6,10 @@ clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
+
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
+
 
 if (allScores !== null) {
 
@@ -19,6 +21,7 @@ if (allScores !== null) {
 
     }
 }
+
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
